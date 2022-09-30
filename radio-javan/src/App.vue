@@ -1,22 +1,24 @@
-<template>
-    <nav>
-        <router-link to="/">Home</router-link> |
-        <router-link to="/register">register</router-link>
-    </nav>
-    <router-view />
-</template>
-
 <script setup>
+
+import HeaderVeiw from './components/HeaderVeiw.vue';
 
 </script>
 
+<template>
+
+    <div>
+        <HeaderVeiw />
+        <router-view />
+    </div>
+
+</template>
+
 <style>
 #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
+    font-family: "Montserrat";
+    /* font-family: Avenir, Helvetica, Arial, sans-serif; */
+    box-sizing: border-box;
     color: #2c3e50;
-    margin-top: 60px;
+    /* margin-top: 4em; */
 }
 </style>
